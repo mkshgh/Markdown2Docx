@@ -29,7 +29,7 @@ It is designed for:
 ```text id="mdflow"
 nsp.md
    ↓
-md2pdf2word.py
+main.py
    ↓
 Mermaid (mmdc) → PNG (high resolution)
    ↓
@@ -103,7 +103,7 @@ wkhtmltopdf -V
 project/
 │
 ├── nsp.md
-├── md2pdf2word.py        # Main script
+├── main.py        # Main script
 ├── processed.md          # Auto-generated
 │
 ├── chart_0.mmd           # Temporary Mermaid input
@@ -120,14 +120,14 @@ project/
 Run the script:
 
 ```bash id="run_script"
-python md2pdf2word.py
+python main.py
 ```
 
 ---
 
 # ⚙️ Configuration
 
-Inside `md2pdf2word.py`:
+Inside `main.py`:
 
 ```python id="config"
 INPUT_MD = "nsp.md"
@@ -256,13 +256,13 @@ Internal / Custom Enterprise Tool
 Main file:
 
 ```text id="entry"
-md2pdf2word.py
+main.py
 ```
 
 Run:
 
 ```bash id="run"
-python md2pdf2word.py
+python main.py
 ```
 
 ---
